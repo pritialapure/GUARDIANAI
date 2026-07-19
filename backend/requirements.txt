@@ -14,21 +14,12 @@ langgraph==0.2.45
 langgraph-checkpoint-sqlite==2.0.1
 langchain-google-genai==2.0.4
 
-# Vector store
+# Vector Store
 chromadb==0.5.20
 langchain-chroma==0.1.4
 
-# PDF loading
+# PDF
 pypdf==5.0.1
-
-# Optional fallback embeddings
-langchain-huggingface==0.1.2
-sentence-transformers==3.2.1
-
-# Optional: only needed if you extend the Tool Agent with live web search
-# (not used by any agent in this project yet). Uncomment if you add it —
-# left out by default because the 0.1.x line doesn't support Python 3.13.
-# langchain-tavily>=0.2.0
 
 # Utilities
 tenacity==9.0.0
