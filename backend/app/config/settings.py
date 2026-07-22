@@ -48,7 +48,7 @@ class Settings(BaseSettings):
     GEMINI_EMBEDDING_MODEL: str = "models/gemini-embedding-001"
 
     # Use Gemini embeddings
-    EMBEDDING_PROVIDER: str = "gemini"
+    EMBEDDING_PROVIDER: str = "huggingface"
 
     # ==========================================================
     # Chroma Vector Store
@@ -60,15 +60,15 @@ class Settings(BaseSettings):
     # ==========================================================
     # Text Splitting
     # ==========================================================
-    CHUNK_SIZE: int = 700
+    CHUNK_SIZE: int = 2000
     CHUNK_OVERLAP: int = 100
     RETRIEVAL_TOP_K: int = 4
 
     # ==========================================================
     # Embedding Batch Settings
     # ==========================================================
-    EMBEDDING_BATCH_SIZE: int = 200
-    EMBEDDING_BATCH_DELAY_SECONDS: float = 0.0
+    EMBEDDING_BATCH_SIZE: int = 10
+    EMBEDDING_BATCH_DELAY_SECONDS: float = 2.0
 
     # ==========================================================
     # Optional APIs
